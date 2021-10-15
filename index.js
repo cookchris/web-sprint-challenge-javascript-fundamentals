@@ -16,7 +16,7 @@ function myFunction() {
 myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
-
+//  This is due to inheritince, the child can reach into the parent.
 
 
 
@@ -28,7 +28,7 @@ myFunction();
     
 For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you may use a for loop for this function if you wish */
 
-function summation(/*Your Code Here*/) {
+function summation(number) {
   /*Your Code Here*/
 
   }
@@ -56,9 +56,7 @@ const zooAnimals = [
   displayNames will be an array of strings, and each string should follow this pattern: "name: {name}, scientific: {scientific name}"
   */
 
-  function animalNames(/*Your Code Here*/){
-    /*Your Code Here*/
-  }
+  // const newNames
   
 
   /* 🦁🦁🦁 Request 2: .map() 🦁🦁🦁
@@ -67,9 +65,13 @@ const zooAnimals = [
   For example: ['jackal, asiatic', .....]
   */
 
-  function lowerCaseNames(/*Your Code Here*/){
-    /*Your Code Here*/
-  }
+
+
+  const lowerCaseNames = zooAnimals.map(function(item){
+      return item.name.toLowerCase();
+    });
+
+
   
   
   /* 🦁🦁🦁 Request 3: .filter() 🦁🦁🦁
